@@ -1,0 +1,761 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #fffdd0;
+  background-image: url("http://localhost/masakin/admin/image/bgweb.png") !important;
+  background-size: cover !important;
+  background-repeat: repeat-y !important;
+  background-position: center center !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  height: 100vh;
+}
+
+nav {
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: #666666;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #666666;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #d2b48c;
+  color: #000000;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  gap: 5rem;
+}
+
+.box {
+  text-align: center;
+  width: 300px;
+}
+
+.box a {
+  color: white;
+}
+
+.box h3 {
+  background-color: burlywood;
+  margin: 0;
+  padding: 10px;
+}
+
+.box .image-placeholder {
+  height: calc(100% - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bbb;
+  font-size: 18px;
+  border-top: 1px solid #ccc;
+}
+
+.image-placeholder img {
+  width: auto;
+  height: 300px;
+  object-fit: contain;
+}
+
+#sidebar {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  overflow-y: auto;
+}
+
+#sidebar.active {
+  display: block;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 998;
+}
+
+#overlay.active {
+  display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.about-card {
+  background-color: white;
+  padding: 30px;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.about-card h3 {
+  margin-top: 0;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.about-content p {
+    flex: 1;
+    text-align: justify;
+}
+
+.about-image {
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.social-icons {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: black;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #007bff;
+}
+
+/*Login & Register*/
+body.login-page {
+  background-image: url("http://localhost/masakin/admin/image/bgweb.png") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.small-text {
+  font-size: 0.8rem;
+}
+
+.login-logo a {
+  font-weight: bold;
+  color: #fffdd0 !important;
+  font-size: 4rem;
+  -webkit-text-stroke: 2px chocolate;
+  text-shadow: 1px 1px 2px black;
+}
+
+.sclogin a {
+  color: brown !important;
+}
+
+.scdaftar a {
+  color: brown !important;
+}
+
+/*Profil*/
+.biodata-profil {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.biodata {
+  flex: 1;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.label_profil {
+  width: 120px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.label_value {
+  flex: 1;
+  padding: 12px 20px;
+  background-color: #d9d9d9;
+  border-radius: 999px;
+  font-size: 16px;
+  color: #000;
+}
+
+.ubah-profil {
+  padding: 50px 20px;
+}
+
+.edit {
+  position: absolute;
+  background-color: #d9d9d9;
+  border-radius: 999px;
+  font-size: 16px;
+  color: #000;
+  padding: 9px 20px;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.daftar-favorit {
+  width: 300px;
+  height: 300px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+}
+
+.form-ubah {
+  margin: 0 auto;
+  width: 116%;
+  max-width: 600px;
+}
+
+/*Search Bar*/
+.menumami {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 2px 20px;
+}
+
+.pilih-budget {
+  width: 14rem;
+}
+
+.pilih-budget select {
+  align-items: center;
+  padding: 4px 3px;
+}
+
+/*Resep Makanan & Minuman*/
+.resepmami {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-items: center;
+  gap: 1rem;
+  padding: 30px;
+  max-width: 1200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  margin: auto;
+}
+
+.daftarmami {
+  width: 100%;
+  max-width: 250px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.isi-resep h2 {
+  font-weight: bold;
+  color: #fffdd0;
+  font-size: 4rem;
+  -webkit-text-stroke: 2px chocolate;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.infomami {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.namamami {
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.buttonmami {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid black;
+  color: black;
+  background-color: #d9d9d9;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.daftarmami img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gridresep {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1.5rem;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.isi-resep {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.isi-resep h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.no-resep {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  padding: 40px;
+  grid-column: 1 / -1;
+}
+
+/*Feedback*/
+.feedback-konten {
+  background-color: white;
+  max-width: 800px;
+  padding: 15px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.head-feedback {
+  text-align: center;
+  padding: 35px 20px 2px;
+}
+
+.isi-feedback p {
+  margin-bottom: 0.5rem;
+}
+
+.form-feedback {
+  margin-left: 230px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-feedback {
+  margin-right: 230px;
+}
+
+.form-horizontal-feedback {
+  display: flex;
+}
+
+.left-column {
+  flex: 1;
+}
+
+.right-column {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.kritik-saran-input {
+  height: 208px;
+}
+
+.submit-feedback {
+  display: flex;
+  margin-left: 230px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*Kelola Feedback*/
+.bio_feedback {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-kelola {
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 230px;
+  margin-right: 230px;
+  margin-top: 15px;
+}
+
+.kelola-fb-all {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.isi-fb {
+  flex: 1;
+  padding: 12px 20px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.pengirim-fb {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/*Kelola Pengguna*/
+.form-kelola-pengguna {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.edit-kelola-pengguna {
+  margin-top: auto;
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #d9d9d9;
+  color: black;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*Tutorial Makanan & Minuman*/
+.tutorial {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tutorial-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.gambartutor {
+  width: 280px;
+  height: 280px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gambartutor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.button-tutor {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.arrow-button {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.arrow-button:hover {
+  color: #ff7f50;
+}
+
+.tutorialmami {
+  background-color: white;
+  padding: 30px;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.about-mami {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+  margin: 40px 40px;
+  flex-direction: column;
+}
+
+.about-menu-mami {
+  background-color: white;
+  padding: 30px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.label-alatbahan h6 {
+  margin-top: 20px;
+}
+
+.about-content {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.about-mami img {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.label-alatbahan h6 {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.label-isi-mami p {
+  text-align: justify;
+}
+
+.label-langkah-mami {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-mami-langkah {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-mami-langkah > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.label-langkah-mami {
+  background-color: #d0cea1;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+
+.about-mami-langkah {
+  background-color: #fffdd0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.gambar-langkah {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.gambar-langkah img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.tombol-finish {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-finish {
+  margin-bottom: 30px;
+  flex: 1;
+  padding: 12px 20px;
+  background-color: #fffdd0;
+  border-radius: 999px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+/*Ulasan Makanan & Minuman*/
+.about-ulasan {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.gambar-selesai {
+  width: 70%;
+  overflow: hidden;
+}
+.gambar-selesai img {
+  border-radius: 12px;
+  display: block;
+}
+
+.about-card-ulasan {
+  background-color: white;
+  padding: 30px;
+  max-width: 1000px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.konfirmasi-ulasan {
+  background-color: #d9d9d9;
+  border-radius: 999px;
+  font-size: 16px;
+  color: #000;
+  padding: 9px 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-ulasan {
+  background-color: #fffdd0;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 230px;
+  margin-right: 230px;
+  margin-top: 15px;
+}
+
+.isi-ulasan {
+  flex: 1;
+  padding: 12px 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+/*Kelola Ulasan Makanan & Minuman*/
+.nama-resepnya {
+  font-weight: bold !important;
+  font-size: 25px !important;
+  color: #000 !important;
+  text-align: center !important;
+}
